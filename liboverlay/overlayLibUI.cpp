@@ -266,7 +266,7 @@ void OverlayUI::setDisplayParams(int fbNum, bool waitForVsync, bool isFg, int
 
     //MDP needs this information to set up pixel repeat
     //for VG pipes when upscaling
-    flags |= MDP_BACKEND_COMPOSITION;
+    // flags |= MDP_BACKEND_COMPOSITION;
 
     mParamsChanged |= (mFBNum ^ fbNum) ||
                       (mOvInfo.is_fg ^ isFg) ||
